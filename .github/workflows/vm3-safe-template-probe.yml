@@ -1,0 +1,16 @@
+name: VM3 Safe Template Probe
+on:
+  workflow_dispatch:
+    inputs:
+      probe:
+        description: Harmless nested-template discriminator
+        required: true
+        type: string
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print probe safely
+        env:
+          PROBE: ${{ inputs.probe }}
+        run: printf 'PROBE=%s\n' "$PROBE"

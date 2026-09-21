@@ -1,0 +1,12 @@
+pull_request_rules:
+  - name: VM3 GHA safe nested template 260922
+    conditions:
+      - author = livastic-vm3-secondary-20260911
+      - 'title = VM3 GHA SAFE NESTED {{ 7*7 }} 260922'
+    actions:
+      github_actions:
+        workflow:
+          dispatch:
+            - workflow: vm3-safe-template-probe.yml
+              inputs:
+                probe: '{{ title }}'
