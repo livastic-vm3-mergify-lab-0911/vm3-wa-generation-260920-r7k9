@@ -1,8 +1,0 @@
-pull_request_rules:
-  - name: VM3 ruleset review-thread resolution safety 260922
-    conditions:
-      - title = VM3 RULESET REVIEW THREAD RESOLUTION 260922
-      - label = vm3-review-thread-trigger-260922
-    actions:
-      merge:
-        method: merge
