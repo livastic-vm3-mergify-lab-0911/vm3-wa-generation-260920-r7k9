@@ -1,8 +1,0 @@
-pull_request_rules:
-  - name: VM3 required reviewer rename oldpath safety 260922
-    conditions:
-      - title = VM3 REQUIRED REVIEWER RENAME OLDPATH 260922
-      - label = vm3-review-rename-trigger-260922
-    actions:
-      merge:
-        method: merge
