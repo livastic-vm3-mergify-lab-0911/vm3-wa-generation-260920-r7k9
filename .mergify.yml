@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: VM3 external automatic merge method policy 260922
+    conditions:
+      - author = livastic-vm3-secondary-20260911
+      - title = VM3 EXTERNAL AUTOMATIC MERGE METHOD 260922
+      - body = VM3_AUTO_METHOD_RELEASE_260922
+    actions:
+      merge: {}
