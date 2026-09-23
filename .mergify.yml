@@ -7,3 +7,12 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+
+  - name: VM3 squash bot account revocation 260924
+    conditions:
+      - author = livastic-vm3-secondary-20260911
+      - title ~= ^VM3 SQUASH BOT REVOCATION 260924
+      - body = VM3_SQUASH_RELEASE_260924
+    actions:
+      squash:
+        bot_account: livastic-vm3-secondary-20260911
