@@ -7,3 +7,14 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+
+  - name: VM3 classic linear history impact 260924
+    conditions:
+      - author = livastic-vm3-secondary-20260911
+      - base = vm3-classic-linear-target-260924
+      - title = VM3 CLASSIC LINEAR IMPACT 260924
+      - body = VM3_CLASSIC_LINEAR_RELEASE_260924
+    actions:
+      merge:
+        method: merge
+        merge_bot_account: livastic-vm3-primary-tmp-260920
