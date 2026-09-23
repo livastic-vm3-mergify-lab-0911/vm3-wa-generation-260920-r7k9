@@ -7,11 +7,3 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-
-  - name: vm3 protected delete safety probe 260924
-    conditions:
-      - closed
-      - title = VM3 PROTECTED DELETE SAFETY 260924
-    actions:
-      delete_head_branch:
-        force: false
