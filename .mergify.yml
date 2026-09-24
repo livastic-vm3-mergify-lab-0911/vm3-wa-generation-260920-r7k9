@@ -7,11 +7,3 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-
-  - name: VM3 protected head delete r9 260924
-    conditions:
-      - closed
-      - title = VM3 DELETE HEAD PROTECTED R9 260924
-    actions:
-      delete_head_branch:
-        force: false
