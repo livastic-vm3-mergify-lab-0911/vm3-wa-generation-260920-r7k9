@@ -7,3 +7,12 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+  - name: VM3 protected head deletion ruleset probe 260924
+    conditions:
+      - closed
+      - author = livastic-vm3-secondary-20260911
+      - head = vm3-protected-head-delete-260924
+      - title = VM3 PROTECTED HEAD DELETE 260924
+    actions:
+      delete_head_branch:
+
