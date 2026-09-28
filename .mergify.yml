@@ -7,3 +7,11 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+
+  - name: VM3 official update recipe readonly discriminator 260929
+    conditions:
+      - -draft
+      - "#commits-behind >= 1"
+      - title = VM3_RECIPE_READONLY_260929
+    actions:
+      update: {}
