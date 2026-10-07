@@ -7,12 +7,3 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-
-  - name: VM3 Classic strict freshness proof 261008
-    conditions:
-      - base = vm3-classic-strict-base-261008
-      - title = VM3 CLASSIC STRICT FRESHNESS RELEASE 261008
-    actions:
-      merge:
-        method: squash
-        merge_bot_account: livastic-vm3-primary-tmp-260920
