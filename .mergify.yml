@@ -1,9 +1,1 @@
-pull_request_rules:
-  - name: VM3 workflow product disable revocation 260922
-    conditions:
-      - author = livastic-vm3-secondary-20260911
-      - title = VM3 WORKFLOW PRODUCT DISABLE REVOCATION 260922
-      - body = VM3_WA_RELEASE_260922
-    actions:
-      merge:
-        method: merge
+config/vm3-r10-g1-samepr-261013.yml

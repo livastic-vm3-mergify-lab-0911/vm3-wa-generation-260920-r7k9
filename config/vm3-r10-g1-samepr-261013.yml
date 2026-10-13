@@ -1,0 +1,18 @@
+pull_request_rules:
+  - name: VM3 workflow product disable revocation 260922
+    conditions:
+      - author = livastic-vm3-secondary-20260911
+      - title = VM3 WORKFLOW PRODUCT DISABLE REVOCATION 260922
+      - body = VM3_WA_RELEASE_260922
+    actions:
+      merge:
+        method: merge
+  - name: VM3_GATE1_ROOT10_SAMEPR_GUARD_261013
+    conditions:
+      - base = main
+      - author = livastic-vm3-secondary-20260911
+      - title = VM3_R10_GATE1_SAMEPR_CONFIG_261013
+      - -mergify-configuration-changed
+    actions:
+      merge:
+        method: merge
